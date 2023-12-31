@@ -1,0 +1,29 @@
+tema qoshish
+
+inputla yasash
+
+user profile page 
+
+notfication 
+
+tabla dashboarda table yoki chart bilan chiqadi
+
+search logik yasah 
+
+settings page yasash 
+
+layout builder qlish 
+
+
+zoom companent yasash
+
+till qoshish
+
+table yasash pagination bilan search va filter bilan 
+
+calendar qoshish
+
+indicator qoshish
+
+accordion sidebarItem yasash
+
