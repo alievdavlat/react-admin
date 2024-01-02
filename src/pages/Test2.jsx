@@ -1,27 +1,46 @@
 import React from "react";
 import "./test.css";
-import 'react-data-grid/lib/styles.css';
+import moment from 'moment';
+import avatarUser from  '../assets/img/women.jpg'
+import MainTable from "../components/table/MainTable";
 
-import DataGrid from 'react-data-grid';
 
 const Test2 = () => {
-
-  const columns = [
-    { key: 'id', name: 'ID' },
-    { key: 'title', name: 'Title' }
-  ];
-  
-  const rows = [
-    { id: 0, title: 'Example' },
-    { id: 1, title: 'Demo' }
-  ];
-
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "First Name",
+        accessor: "firstName"
+      },
+      {
+        Header: "Last Name",
+        accessor: "lastName"
+      },
+      {
+        Header: "Age",
+        accessor: "age"
+      },
+      {
+        Header: "Visits",
+        accessor: "visits"
+      },
+      {
+        Header: "Status",
+        accessor: "status"
+      },
+      {
+        Header: "Profile Progress",
+        accessor: "progress"
+      }
+    ],
+    []
+  );
 
   return (
-    <div>
-      <DataGrid columns={columns} rows={rows} />
-    </div>
-  );
+    <>
+    <MainTable />
+    </>
+  )
 };
 
 export default Test2;
