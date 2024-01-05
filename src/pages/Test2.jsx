@@ -1,44 +1,15 @@
 import React from "react";
 import "./test.css";
-import moment from 'moment';
-import avatarUser from  '../assets/img/women.jpg'
-import MainTable from "../components/table/MainTable";
+import InputRegular from '../components/inputs/inputRegular/InputRegular'
+import FileUploadInput  from '../components/inputs/fileUploadInput/FileUploadInput'
+
 
 
 const Test2 = () => {
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: "First Name",
-        accessor: "firstName"
-      },
-      {
-        Header: "Last Name",
-        accessor: "lastName"
-      },
-      {
-        Header: "Age",
-        accessor: "age"
-      },
-      {
-        Header: "Visits",
-        accessor: "visits"
-      },
-      {
-        Header: "Status",
-        accessor: "status"
-      },
-      {
-        Header: "Profile Progress",
-        accessor: "progress"
-      }
-    ],
-    []
-  );
+  
 
   return (
     <>
-    <MainTable />
     </>
   )
 };

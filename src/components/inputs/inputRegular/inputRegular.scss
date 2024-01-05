@@ -35,8 +35,9 @@
       }
 
       &:focus {
-        border:3px solid #4184f1e7;
-        box-shadow:inset 0 0 3px 3px #888; 
+        border:3px solid var(--primaryColor);
+        outline:none;
+        // box-shadow:inset 0 0 3px 3px #888; 
       }
     }
 }

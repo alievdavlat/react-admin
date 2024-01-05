@@ -2,10 +2,17 @@ import React from 'react'
 import {BiSearchAlt} from 'react-icons/bi'
 import {FaBell, FaChevronDown, FaChevronUp} from 'react-icons/fa'
 import women from '../../assets/img/women.jpg'
+import { FaAffiliatetheme } from "react-icons/fa";
+import { useDispatch } from 'react-redux';
+import {changeTheme} from '../../redux/features/themeSlice'
 
 const TopContainer = () => {
 
   const [openDropdown, setOpenDropdown] = React.useState(false)
+  const [openThemeDropdown, setOpenThemeDropdown] = React.useState(false)
+
+  const dispatch = useDispatch()
+
 
   React.useEffect(() => {
     const mouseTarget = document.getElementById("menuChevron");
@@ -19,8 +26,28 @@ const TopContainer = () => {
       menuContainer.style.transform = "translateX(15rem)";
       setOpenDropdown(false)
     });
+
+
+    // const themeTarget = document.querySelector('.main-container-top_profileCon-theme')
+    // const themeDropwDown = document.querySelector('.main-container-top_profileCon-theme ul')
+    // themeTarget.addEventListener("mouseenter", () => {
+    //   themeDropwDown.style.display = "block";
+    //   // setOpenThemeDropdown(true)
+    // });
+
+    // themeTarget.addEventListener("mouseleave", () => {
+    //   themeDropwDown.style.display = "none";
+    //   // setOpenThemeDropdown(false)
+    // });
+
+
   }, []);
 
+
+  const setTheme = (name) => {
+      dispatch(changeTheme(name))
+  }
+  
 
   return (
     <div className='main-container-top'>
@@ -34,6 +61,22 @@ const TopContainer = () => {
       </div>
 
       <div className="main-container-top_profileCon">
+         
+          <div className='main-container-top_profileCon-theme' onClick={() => setOpenThemeDropdown(!openThemeDropdown)}>
+          <FaAffiliatetheme  size={21} />
+
+           {
+            openThemeDropdown && 
+            <ul>
+            <li onClick={() => setTheme('dark')}>dark</li>
+            <li onClick={() => setTheme('light')}>light</li>
+            <li onClick={() => setTheme('blue')}>blue</li>
+            <li onClick={() => setTheme('')}>system</li>
+          </ul>
+           }
+          </div>
+
+
           <i className="main-container-top_profileCon-icon">
             <FaBell/>
           </i>

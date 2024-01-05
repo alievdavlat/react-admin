@@ -1,0 +1,132 @@
+.profile{
+  margin-top: 6rem;
+  color: white;
+
+  &-header {
+    background:#1c1c1cff;
+    width: 100%;
+    border: 1px solid #08043a;
+    padding: 0rem 3rem;
+    &-top {
+    display: flex;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+      &_image{
+        width: 15rem;
+        height: 14rem;
+        border-radius: .5rem;
+        img{
+          border-radius: .5rem;   
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-info {
+        margin-left: 2rem;
+
+        h4{
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: center;
+          color: var(--secondaryText);
+          &:hover{
+            color: var(--primaryColor);
+            transition: all .4s ;
+
+          }
+          span {
+            display: block;
+            padding: .2rem .3rem;
+            background: #1c3238ff;
+            font-size: 0.8rem;
+            border-radius: 0.3rem;
+            color: rgb(12, 226, 12);
+            margin-left: 0.5rem;
+
+            &:hover{
+              background: rgb(50,205,50);
+              color: white;
+              transition: all .4s ;
+            }
+          }
+        }
+        p{
+          font-size: 0.9rem;
+          color: var(--secondaryText);
+          &:hover{
+            color: var(--primaryColor);
+            transition: all .4s ;
+          }
+
+        }
+
+      }
+
+    }
+    &-bottom{
+      display: flex;
+      align-items: center;
+
+      li{
+        margin-right: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+        height: 2.5rem;
+        &:hover{
+          transition: all .4s;
+          color: rgb(44, 111, 245);
+          border-bottom: 1px solid rgb(17, 87, 227);
+          cursor: pointer;
+        }
+        &:last-of-type{
+        margin-right: 0rem;
+        }
+      }
+
+      .active {
+        color: rgb(44, 111, 245);
+        border-bottom: 1px solid rgb(17, 87, 227);
+      }
+    }
+  }
+
+  &-details{
+    background:#1c1c1cff;
+    width: 100%;
+    border: 1px solid #08043a;
+    margin-top: 2rem;
+    
+    &-top{
+      border-bottom: 1px solid #08043a;
+      padding: 0.8rem 1.3rem; 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      h4{
+        font-size: 1.4rem;
+        color: var(--secondaryText);
+        font-weight: 700;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background: var(--primaryColor);
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+
+
+    }
+  }  
+}

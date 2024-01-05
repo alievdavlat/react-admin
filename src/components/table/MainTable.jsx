@@ -9,7 +9,6 @@ const MainTable = () => {
   return (
     <>
 
-          
     </>
   )
 }
