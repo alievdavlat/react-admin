@@ -11,9 +11,6 @@ settings page yasash
 
 layout builder qlish 
 
-
-zoom companent yasash
-
 chart component yasash
 
 till qoshish

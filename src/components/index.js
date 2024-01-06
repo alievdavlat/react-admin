@@ -11,7 +11,7 @@ import ImageInput from './inputs/imageInput/ImageInput'
 import InputRegular2 from '../components/inputs/inputWithoutBox/InputRegular2'
 import Button from './button/Button'
 import ZoomModal from './zoomModal/ZoomModal'
-
+import AreaCharts from './charts/AreaCharts'
 
 export {
   Sidebar,
@@ -26,7 +26,9 @@ export {
   ImageInput,
   InputRegular2,
   Button,
-  ZoomModal
+  ZoomModal,
+AreaCharts
+
 
 }
 
