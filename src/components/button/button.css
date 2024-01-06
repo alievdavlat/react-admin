@@ -1,0 +1,1 @@
+.button{width:6.5rem;background:var(--primaryColor);padding:.6rem 1.5rem;border-radius:.5rem;border:none;outline:none;margin-left:1rem;cursor:pointer}.button:hover{opacity:.9;transition:all .4s}.button:disabled{opacity:.4}.button:active{background:#0f2027;background:linear-gradient(to right, #2c5364, #203a43, #0f2027)}

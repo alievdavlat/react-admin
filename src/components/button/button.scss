@@ -1,0 +1,36 @@
+.button {
+  width: 6.5rem;
+  background: var(--primaryColor);
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+    transition: all 0.4s;
+    
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &:active {
+    background: #0f2027; 
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); 
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); 
+  }
+}

@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: none;
 
   }
 
@@ -54,7 +55,7 @@
         display: inline;
         position: absolute;
         top: -0.2rem;
-        right: -120%;
+        right: -4rem;
         padding: 0.3rem;
         border-radius: 0.2rem;
       }

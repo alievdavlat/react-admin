@@ -5,6 +5,11 @@ import TextEditor from './inputs/textEditor/TextEditor'
 import  ProfileDetails from'./profile/ProfileDetails'
 import ProfileHeader from './profile/ProfileHeader'
 import ProfileSettings from './profile/ProfileSettings'
+import FileUploadInput from './inputs/fileUploadInput/FileUploadInput'
+import InputRegular  from './inputs/inputRegular/InputRegular'
+import ImageInput from './inputs/imageInput/ImageInput'
+import InputRegular2 from '../components/inputs/inputWithoutBox/InputRegular2'
+import Button from './button/Button'
 export {
   Sidebar,
   TopContainer,
@@ -12,9 +17,13 @@ export {
   TextEditor,
   ProfileDetails,
   ProfileHeader,
-  ProfileSettings
+  ProfileSettings,
+  FileUploadInput,
+  InputRegular,
+  ImageInput,
+  InputRegular2,
+  Button
 
-  
 }
 
 

@@ -5,8 +5,7 @@ import avatar from "../../assets/img/1.jpg";
 
 const tabs = ["Details", "Settings"];
 
-const ProfileHeader = ({setProfileTabs}) => {
-  const [activeTab, setActiveTab] = React.useState(0);
+const ProfileHeader = ({setProfileTabs, activeTab, setActiveTab}) => {
 
   const onTabClick = (idx) => {
     setActiveTab(idx)

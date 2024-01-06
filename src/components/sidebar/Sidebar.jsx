@@ -18,19 +18,30 @@ import SidebarItemSimple from "./SidebarItemSimple";
 const Sidebar = () => {
   const [activeItem, setActiveItem] = React.useState(1);
   const [isToggle, setIsToggle] = React.useState(false);
+  const screenWidth = window.innerWidth;
+  const [disTogg, setDisTogh] = React.useState(false)
 
+  React.useEffect(() => {
+    window.addEventListener('resize', () => {
+      
+      if (screenWidth < 430) {
+        setIsToggle(false)
+        setDisTogh(true)
+      }
+    });
+  }, [screenWidth])
 
   return (
   <aside className={`menu ${isToggle && "menu-active"}`}>
       <img src={logo} alt="logo" />
 
-      <div className="menu-toggle" onClick={() => setIsToggle(!isToggle)}>
+      <button disabled={disTogg} className="menu-toggle" onClick={() => setIsToggle(!isToggle)}>
         {isToggle ? (
           <FaAngleLeft size={15} fill="white" />
         ) : (
           <FaAngleRight size={15} fill="white" />
         )}
-      </div>
+      </button>
 
       <ul className="menu-navigation" id="menu-navigation">
         <SidebarItemSimple

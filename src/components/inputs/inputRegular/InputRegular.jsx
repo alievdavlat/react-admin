@@ -25,7 +25,7 @@ const InputRegular = ({
 
 */
   return (
-    <div className="input-box">
+    
       <div className="input-main">
         <label htmlFor={id}>{label}</label>
         <input
@@ -38,7 +38,7 @@ const InputRegular = ({
           required={required}
         />
       </div>
-    </div>
+    
   );
 };
 

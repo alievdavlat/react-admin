@@ -35,8 +35,18 @@
 	--form-btn:#3d546f;
 	--shadow:0px 0px 20px rgba(0, 0, 0, 0.4);
 	--dropdown-hover:#121026;
+	--profileBg:rgb(22, 19, 55);
 }
 
+.input-box {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(12.5rem, 1fr) );
+  grid-template-rows: auto ;
+  padding: 1rem;
+  /* column-gap: 1rem; */
+  /* row-gap: 1rem; */
+  margin: 1rem;
+}
 
 ul,li {
 	margin: 0;
@@ -90,9 +100,10 @@ html {
 	--inputsText:#212121;
 	--formBtn:#212121;
 	--inputBorder:#4864a6;
-	--inputInside:#fff;
+	--inputInside:#f5efef;
 	--shadow:0px 0px 5px rgba(0, 0, 0, 0.4);
 	--dropdown-hover:#aaa;
+	--profileBg:rgba(255, 255, 255, 0.5);
 }
 
 .light-green {
@@ -169,6 +180,8 @@ html {
 	--form-btn:#212121;
 	--shadow:0px 0px 20px rgba(0, 0, 0, 0.4);
 	--dropdown-hover:#212121;
+	--profileBg:rgb(24, 24, 24);
+
 }
 
 
@@ -246,6 +259,8 @@ html {
 	--inputInside:#a5def9;
 	--shadow:0px 0px 5px rgba(0, 0, 0, 0.4);
 	--dropdown-hover:#373535;
+	--profileBg:rgba(26, 24, 84, 0.92);
+
 }
 
 

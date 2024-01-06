@@ -2,7 +2,8 @@
   width: calc(100% -  5rem);
   height: 100%;
   padding: 1rem;
-
+  overflow-y: auto;
+  overflow-x: hidden;
   &-top{
     display: flex;
     justify-content: space-between;
