@@ -10,6 +10,9 @@ import InputRegular  from './inputs/inputRegular/InputRegular'
 import ImageInput from './inputs/imageInput/ImageInput'
 import InputRegular2 from '../components/inputs/inputWithoutBox/InputRegular2'
 import Button from './button/Button'
+import ZoomModal from './zoomModal/ZoomModal'
+
+
 export {
   Sidebar,
   TopContainer,
@@ -22,7 +25,8 @@ export {
   InputRegular,
   ImageInput,
   InputRegular2,
-  Button
+  Button,
+  ZoomModal
 
 }
 

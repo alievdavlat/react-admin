@@ -2,6 +2,8 @@ import React from "react";
 import "./profile.scss";
 
 import avatar from "../../assets/img/1.jpg";
+import { useDispatch } from "react-redux";
+import { openModal,setImage } from "../../redux/features/zoomModal";
 
 const tabs = ["Details", "Settings"];
 
@@ -12,11 +14,19 @@ const ProfileHeader = ({setProfileTabs, activeTab, setActiveTab}) => {
     setProfileTabs(idx)
   }
 
+
+  const dispatch = useDispatch()
+  
+  const handleOpenZoom = (state, image) => {
+    dispatch(openModal(state))
+    dispatch(setImage(image))
+  }
+
   return (
     <div className="profile-header">
       <div className="profile-header-top">
         <div className="profile-header-top_image">
-          <img src={avatar} alt="avatar" />
+          <img src={avatar} alt="avatar"  onClick={() => handleOpenZoom(true, avatar)}/>
         </div>
 
         <div className="profile-header-top-info">

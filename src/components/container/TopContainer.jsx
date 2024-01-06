@@ -5,6 +5,7 @@ import women from '../../assets/img/women.jpg'
 import { FaAffiliatetheme } from "react-icons/fa";
 import { useDispatch } from 'react-redux';
 import {changeTheme} from '../../redux/features/themeSlice'
+import { Link } from 'react-router-dom';
 
 const TopContainer = () => {
 
@@ -71,6 +72,7 @@ const TopContainer = () => {
             <li onClick={() => setTheme('dark')}>dark</li>
             <li onClick={() => setTheme('light')}>light</li>
             <li onClick={() => setTheme('blue')}>blue</li>
+            <li onClick={() => setTheme('gray-gradient')}>gray gradient</li>
             <li onClick={() => setTheme('')}>system</li>
           </ul>
            }
@@ -81,9 +83,9 @@ const TopContainer = () => {
             <FaBell/>
           </i>
 
-          <div className="main-container-top_profileCon-image">
+          <Link to={'/profile'} className="main-container-top_profileCon-image">
               <img src={women} alt="avatar" />
-          </div>
+          </Link>
 
           <p className="main-container-top_profileCon-name">
             Aliev Davlatbek

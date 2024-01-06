@@ -1,7 +1,5 @@
 
-inputla yasash
 
-user profile page 
 
 notfication 
 
@@ -15,6 +13,8 @@ layout builder qlish
 
 
 zoom companent yasash
+
+chart component yasash
 
 till qoshish
 
