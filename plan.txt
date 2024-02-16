@@ -1,8 +1,4 @@
 
-
-
-notfication 
-
 tabla dashboarda table yoki chart bilan chiqadi
 
 search logik yasah 
@@ -10,8 +6,6 @@ search logik yasah
 settings page yasash 
 
 layout builder qlish 
-
-chart component yasash
 
 till qoshish
 
@@ -23,3 +17,5 @@ indicator qoshish
 
 accordion sidebarItem yasash
 
+
+login page
